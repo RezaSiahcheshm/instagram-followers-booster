@@ -5,12 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\RewardOrderRequest;
 use App\Http\Requests\StoreOrderRequest;
 use App\Repositories\OrderRepository;
-use App\Models\Order;
-use App\Models\OrderActivity;
-use App\Models\User;
 use App\Services\OrderService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use App\Models\User;
 use Illuminate\Support\Facades\Response;
 
 class OrderController extends Controller
