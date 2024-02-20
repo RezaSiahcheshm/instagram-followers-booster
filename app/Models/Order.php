@@ -15,4 +15,9 @@ class Order extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function orderActivities()
+    {
+        return $this->hasMany(OrderActivity::class);
+    }
 }

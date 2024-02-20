@@ -21,6 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'orders'], function () {
     Route::get('', [OrderController::class, 'index'])->name('orders.index');
-    Route::post('reward', [OrderController::class, 'reward'])->name('orders.reward');
+    Route::post('/reward', [OrderController::class, 'reward'])->name('orders.reward');
     Route::post('', [OrderController::class, 'store'])->name('orders.store');
 });
